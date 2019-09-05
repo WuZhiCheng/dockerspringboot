@@ -6,7 +6,7 @@ RUN echo 'Asia/Shanghai' >/etc/timezone
 #RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 #&& echo 'Asia/Shanghai' >/etc/timezone \
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
-
+#第一版
 #FROM java:8-alpine
 #ADD bootDocker.jar bootDocker.jar
 #EXPOSE 8084
