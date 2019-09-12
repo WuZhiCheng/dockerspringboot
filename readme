@@ -1,0 +1,7 @@
+https://juejin.im/post/5d026212f265da1b8608828b#heading-1
+中途遇到使用2375端口无法访问的问题，改用其它端口 如22375之后可用
+无法访问的问题还可能是防火墙开启了
+查看防火墙状态：
+firewall-cmd --state
+systemctl stop firewalld.service
+可通过http://ip:22375/version查看是否可用
